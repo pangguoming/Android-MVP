@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   NetWork Setting -->
+    <integer name="default_timeout">8000</integer>
+    <string name="host_url">https://ssl.buildersaccess.com/</string>
+
+</resources>

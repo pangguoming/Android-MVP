@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.buildersaccess.haustalk.ui.activity.CreateAccountActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find tickets by address or homeowner"
+        android:textSize="16dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_gray_border">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_bottom_gray_border"
+            android:paddingLeft="10dp"
+            android:paddingTop="17dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="18dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="Search by address"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
+                android:background="@null"
+                android:id="@+id/et_searchAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_bottom_gray_border"
+            android:paddingLeft="10dp"
+            android:paddingTop="17dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="18dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="Search by homeowner"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
+                android:background="@null"
+                android:id="@+id/et_searchHomeowner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_bottom_gray_border"
+            android:paddingLeft="10dp"
+            android:paddingTop="17dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="18dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* a minimum of 3 chars are required to search."
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="17dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="18dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/bt_submit" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:id="@+id/pb_submit" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:id="@+id/bt_cancel"
+                android:layout_marginLeft="10dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_result" />
+
+</LinearLayout>

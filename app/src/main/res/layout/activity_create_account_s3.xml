@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buildersaccess.haustalk.ui.activity.CreateAccountActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify Information"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linearlayout_gray_border"
+                android:paddingBottom="30dp" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearlayout_bottom_gray_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="18dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearlayout_bottom_gray_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="18dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_email" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearlayout_bottom_gray_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="18dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearlayout_bottom_gray_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="18dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearlayout_bottom_gray_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="18dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_alphone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linearlayout_bottom_gray_border"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="18dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_time" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="#ffffff"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/bt_continue" />
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:id="@+id/pb_continue" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
